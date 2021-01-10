@@ -13,4 +13,6 @@ class Product extends Model
   {
     return $this->belongsTo(ProductCategory::class);
   }
+
+  protected $perPage = 20;
 }
