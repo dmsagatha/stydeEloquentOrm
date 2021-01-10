@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('productos', function () {
-  $products = Product::all();
+  $products = Product::with('category')->get();
 
   return view('products', ['products' => $products]);
 });
