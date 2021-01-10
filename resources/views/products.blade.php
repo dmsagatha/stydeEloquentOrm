@@ -26,7 +26,8 @@
       @empty
         <p>No se encontraron productos
       @endforelse
-
     </div>
+    
+    {{ $products->links() }}
   </main>
 @endsection
