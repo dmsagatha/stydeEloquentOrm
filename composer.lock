@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ae1d19719209f189f57ff8d4eb050a0",
+    "content-hash": "e0fa6b0c0ae3a828af625884c1e48100",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5299,6 +5299,78 @@
             "time": "2020-11-01T12:00:00+00:00"
         },
         {
+            "name": "fruitcake/laravel-telescope-toolbar",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fruitcake/laravel-telescope-toolbar.git",
+                "reference": "cb5c443506864b1bb14fc82909dc67bf96e10858"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fruitcake/laravel-telescope-toolbar/zipball/cb5c443506864b1bb14fc82909dc67bf96e10858",
+                "reference": "cb5c443506864b1bb14fc82909dc67bf96e10858",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^8",
+                "laravel/telescope": "^4",
+                "php": "^7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Fruitcake\\TelescopeToolbar\\ToolbarServiceProvider"
+                    ],
+                    "aliases": {
+                        "Toolbar": "Fruitcake\\TelescopeToolbar\\Toolbar"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fruitcake\\TelescopeToolbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fruitcake",
+                    "email": "info@fruitcake.nl"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Toolbar for Laravel Telescope based on Symfony Web Profiler",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "telescope",
+                "toolbar",
+                "webprofiler"
+            ],
+            "support": {
+                "issues": "https://github.com/fruitcake/laravel-telescope-toolbar/issues",
+                "source": "https://github.com/fruitcake/laravel-telescope-toolbar/tree/master"
+            },
+            "time": "2020-09-08T16:14:22+00:00"
+        },
+        {
             "name": "hamcrest/hamcrest-php",
             "version": "v2.0.1",
             "source": {
@@ -5407,6 +5479,70 @@
                 "source": "https://github.com/laravel/sail"
             },
             "time": "2021-01-05T16:40:11+00:00"
+        },
+        {
+            "name": "laravel/telescope",
+            "version": "v4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/telescope.git",
+                "reference": "535889a7585c331854dbdf8ca5e66209588408dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/telescope/zipball/535889a7585c331854dbdf8ca5e66209588408dd",
+                "reference": "535889a7585c331854dbdf8ca5e66209588408dd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^8.2",
+                "php": "^7.3|^8.0",
+                "symfony/var-dumper": "^5.0"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "orchestra/testbench": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Telescope\\TelescopeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Telescope\\": "src/",
+                    "Laravel\\Telescope\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "mohamed@laravel.com"
+                }
+            ],
+            "description": "An elegant debug assistant for the Laravel framework.",
+            "keywords": [
+                "debugging",
+                "laravel",
+                "monitoring"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/telescope/issues",
+                "source": "https://github.com/laravel/telescope/tree/v4.4.0"
+            },
+            "time": "2020-12-15T19:19:38+00:00"
         },
         {
             "name": "mockery/mockery",
